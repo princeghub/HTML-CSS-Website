@@ -1,0 +1,1143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primeryColor: #5D12D2;
+    --seconderyColor: #B931FC;
+    --darkColor: #20262E;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(284deg, rgb(93, 18, 210) 0%, rgb(185, 49, 252) 50%, rgb(255, 106, 194) 100%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url(./Assits/wave\ \(1\).svg) no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.header .headerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header .headerContent h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+.header .headerContent h1::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    right: 15%;
+    height: 10px;
+    width: 30%;
+    background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+    background-size: cover;
+}
+
+.header .headerContent p {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header .headerContent a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--darkColor);
+    padding: .8rem 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.header .headerContent a:hover {
+    transform: translateY(-5px);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    background: #fff;
+    width: 80%;
+    margin: 0 auto;
+    height: 40px;
+    border-radius: 0 0 2rem 2rem;
+}
+
+nav .logo a {
+    font-size: 50px;
+    display: inline-block;
+    color: #5D12D2;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav .navLink ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+nav .navLink ul li a {
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 20px;
+}
+
+nav .fa-solid {
+    font-size: 25px;
+    display: none;
+}
+
+/* ========================================= Responsive CSS Start ==================================== */
+
+
+
+@media(max-width:900px) {
+
+
+    nav .navLink {
+        background: #fff;
+        position: absolute;
+        top: -100%;
+        right: 4%;
+        width: 92%;
+        height: 70%;
+        border-radius: 0 0 2rem 2rem;
+        transition: all .7s ease-in-out;
+        z-index: 1;
+    }
+
+    nav .navLink ul li {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    nav .fa-solid {
+        display: block;
+    }
+
+    nav .fa-xmark {
+        display: block;
+        text-align: right;
+        padding: 1rem 2rem;
+    }
+
+    .header .headerContent h1 {
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    .header .headerContent p {
+        font-size: 12px;
+    }
+
+}
+
+@media(max-width:560px) {
+    .header .headerContent h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .header .headerContent p {
+        font-size: 10px;
+    }
+
+    nav {
+        height: 50px;
+    }
+
+    nav .logo a {
+        font-size: 40px;
+    }
+
+    .header .headerContent a {
+        padding: .5rem 1rem;
+        border-radius: .7rem;
+    }
+
+    .header .headerContent h1::after {
+        content: "";
+        position: absolute;
+        bottom: -7%;
+        right: 10%;
+        height: 8px;
+        width: 40%;
+    }
+}
+
+
+/* ========================================= Responsive CSS End ==================================== */
+
+/* ======== Cart Section ========= */
+
+.cartSection {
+    position: relative;
+    height: 150vh;
+}
+
+.cartSection .cartWraper {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 6%;
+}
+
+.cartSection .cartBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(292px, 1fr));
+    gap: 2rem;
+    align-items: center;
+}
+
+.cartSection .cartBox .cart {
+    background: #fff;
+    height: 250px;
+    padding: 2.5rem 2rem;
+    border-radius: 1rem;
+    box-shadow: -14px -4px 92px -41px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: -14px -4px 92px -41px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: -14px -4px 92px -41px rgba(0, 0, 0, 0.6);
+}
+
+.cartSection .cartBox .cart span {
+    font-size: 30px;
+    color: #B931FC;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.cartSection .cartBox .cart h4 {
+    font-size: 20px;
+    color: var(--darkColor);
+    line-height: 2rem;
+}
+
+.cartSection .cartBox .cart p {
+    color: var(--darkColor);
+    line-height: 2rem;
+}
+
+.cartSection .cartBox .cart a {
+    text-decoration: none;
+    color: var(--seconderyColor);
+}
+
+
+/* ========================================= Responsive CSS Start ==================================== */
+
+@media(max-width:900px) {
+    .cartSection .cartWraper {
+        top: -3%;
+    }
+
+    .cartSection {
+        position: relative;
+        height: 220vh;
+    }
+}
+
+@media(max-width:568px) {
+    .cartSection .cartWraper {
+        top: -3%;
+    }
+
+    .cartSection {
+        height: 370vh;
+    }
+}
+
+
+
+/* ========================================= Responsive CSS End ==================================== */
+
+
+
+.cartSection .whyCartBox {
+    position: absolute;
+    bottom: 38%;
+    left: 0;
+    padding: 0 6%;
+    width: 90%;
+}
+
+.cartSection .whyCartBox .why {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    color: #dadada;
+}
+
+.cartSection .whyCartBox .subTitle {
+    font-size: 35px;
+    color: var(--darkColor);
+    text-align: center;
+    position: relative;
+}
+
+.cartSection .whyCartBox .subTitle::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    right: 30%;
+    height: 10px;
+    width: 20%;
+    background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+    background-size: cover;
+}
+
+.cartSection .whyCartBox .whyCart {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    margin: 4rem;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.cartSection .whyCartBox .whyCart .wraperCart {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    gap: 1.5rem;
+    background: #fff;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    border: .3px solid #fff;
+}
+
+.cartSection .whyCartBox .whyCart .shadow {
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, .07);
+    border: .3px solid #dadada;
+}
+
+.cartSection .whyCartBox .whyCart .wraperCart:hover {
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, .07);
+    border: .3px solid #dadada;
+}
+
+.cartSection .whyCartBox .whyCart .wraperCart .cartIcon span {
+    color: var(--seconderyColor);
+    font-size: 35px;
+}
+
+
+
+/* ========================================= Responsive CSS Start ==================================== */
+
+@media(max-width:900px) {
+    .cartSection .whyCartBox {
+        position: absolute;
+        top: 32%;
+        left: 0;
+        padding: 0 6%;
+        width: 90%;
+    }
+}
+
+@media(max-width:568px) {
+    .cartSection .whyCartBox {
+        position: absolute;
+        top: 52%;
+        left: 0;
+        padding: 0 4%;
+        width: 90%;
+        margin: 0;
+    }
+
+    .cartSection .whyCartBox .why {
+        font-size: 12px;
+    }
+
+    .cartSection .whyCartBox .subTitle {
+        font-size: 20px;
+    }
+
+    .cartSection .whyCartBox .whyCart {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+        margin: 0;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .cartSection .whyCartBox .subTitle::after {
+        content: "";
+        position: absolute;
+        bottom: -7%;
+        right: 10%;
+        height: 8px;
+        width: 30%;
+    }
+}
+
+
+/* ========================================= Responsive CSS End ==================================== */
+
+
+.cartSection .ideaSection {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    padding: 0 10%;
+    gap: 3rem;
+    width: 90%;
+}
+
+.cartSection .ideaSection .imgSide {
+    width: 40%;
+    border-radius: 1rem;
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, .07);
+    padding: 1rem;
+}
+
+.cartSection .ideaSection .imgSide img {
+    border-radius: 1rem;
+}
+
+.cartSection .ideaSection .ContentSide {
+    width: 50%;
+}
+
+.cartSection .ideaSection .ContentSide h4 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.cartSection .ideaSection .ContentSide p {
+    width: 600px;
+    margin: 1rem 0;
+    font-size: 20px;
+}
+
+.cartSection .ideaSection .ContentSide ul {
+    list-style: none;
+}
+
+.cartSection .ideaSection .ContentSide ul span {
+    color: var(--primeryColor);
+    font-size: 18px;
+    margin-right: 3px;
+}
+
+.cartSection .ideaSection .ContentSide ul li {
+    font-size: 20px;
+}
+
+.cartSection .ideaSection .ContentSide .lrnBtn {
+    font-size: 18px;
+    display: inline-block;
+    padding: .7rem 1rem;
+    background: var(--seconderyColor);
+    color: #fff;
+    text-decoration: none;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+#box1{
+    display: block;
+    transition: all .3s ease-in-out;
+} 
+#box2{
+    display: none;
+    transition: all .3s ease-in-out;
+} 
+#box3{
+    display: none;
+    transition: all .3s ease-in-out;
+} 
+
+/* ========================================= Responsive CSS Start ==================================== */
+
+@media(max-width:900px) {
+    .cartSection .ideaSection {
+        bottom: 2%;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .cartSection .ideaSection .imgSide {
+        width: 90%;
+        border-radius: 1rem;
+    }
+
+    .cartSection .ideaSection .ContentSide {
+        width: 90%;
+    }
+}
+
+@media(max-width:568px) {
+    .cartSection .ideaSection {
+        bottom: 3%;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .cartSection .ideaSection .imgSide {
+        width: 90%;
+        padding: 0;
+    }
+
+    .cartSection .ideaSection .ContentSide h4 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .cartSection .ideaSection .ContentSide p {
+        width: 100%;
+        margin: 1rem 0;
+        font-size: 12px;
+    }
+
+    .cartSection .ideaSection .ContentSide ul li {
+        font-size: 12px;
+    }
+
+    .cartSection .ideaSection .ContentSide ul span {
+        font-size: 15px;
+    }
+}
+
+
+
+/* ========================================= Responsive CSS End ==================================== */
+
+
+
+/* ================ Save Time & Money ================ */
+.teamSection {
+    background: #F6F7F9;
+    padding: 4rem 6%;
+    height: 60vh;
+    width: 90%;
+}
+
+.teamSection .teamLeft .save {
+    font-size: 20px;
+    color: #dadada;
+
+}
+
+.teamSection .teamLeft h2 {
+    font-size: 35px;
+    position: relative;
+}
+
+.teamSection .teamLeft h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    right: 0;
+    height: 10px;
+    width: 40%;
+    background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+    background-size: cover;
+}
+
+.teamSection .teamWraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.teamSection .teamRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.progressbar {
+    height: 100px;
+    width: 200px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: last baseline;
+}
+
+.progressbar span {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.progressbar::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    border: 15px solid;
+    border-color: var(--seconderyColor) var(--seconderyColor) var(--primeryColor) var(--primeryColor);
+    border-radius: 50%;
+    transform: rotate(110deg);
+    box-sizing: border-box;
+    animation: progress 2s 1;
+}
+
+@keyframes progress {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(110deg);
+    }
+}
+
+
+.teamSection .teamReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    margin-top: 5rem;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0 0.25rem 1.75rem rgba(30, 34, 40, .07);
+    border-radius: 10px;
+}
+
+.teamSection .teamReview .reviewimg {
+    width: 50%;
+}
+
+.teamSection .teamReview .reviewContent {
+    width: 50%;
+    text-align: center;
+}
+
+.teamSection .teamReview .reviewContent .star {
+    color: rgba(255, 255, 5, 0.842);
+    font-size: 18px;
+}
+
+.teamSection .teamReview .reviewContent p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.teamSection .teamReview .reviewContent h5 {
+    font-size: 25px;
+}
+
+
+/* ========================================= Responsive CSS Start ==================================== */
+
+@media(max-width:900px) {
+    .teamSection .teamWraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teamSection .teamLeft {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .teamSection .teamRight {
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .teamSection .teamReview .reviewContent p {
+        font-size: 13px;
+    }
+
+    .teamSection .teamReview .reviewContent h5 {
+        font-size: 18px;
+    }
+
+    .teamSection .teamLeft h2::after {
+        content: "";
+        position: absolute;
+        bottom: -2%;
+        right: 15%;
+        height: 10px;
+        width: 20%;
+        background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+        background-size: cover;
+    }
+}
+
+@media (max-width:568px) {
+    .teamSection .teamRight {
+        flex-direction: column;
+    }
+
+    .teamSection .teamLeft h2 {
+        font-size: 18px;
+    }
+
+    .teamSection .teamLeft .save {
+        font-size: 12px;
+
+    }
+
+    .teamSection .teamReview {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .teamSection .teamReview .reviewimg {
+        width: 90%;
+
+    }
+
+    .teamSection .teamReview .reviewContent {
+        width: 90%;
+    }
+
+    .teamSection .teamReview .reviewContent p {
+        font-size: 10px;
+    }
+
+    .teamSection .teamReview .reviewContent .star {
+        font-size: 12px;
+    }
+
+    .teamSection .teamLeft h2::after {
+        content: "";
+        position: absolute;
+        bottom: -10%;
+        right: 15%;
+        height: 8px;
+        width: 25%;
+        background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+        background-size: cover;
+    }
+}
+
+/* ========================================= Responsive CSS End ==================================== */
+
+
+.projectSection {
+    margin-top: 13rem;
+    text-align: center;
+    padding: 0 6%;
+}
+
+.projectSection .subTitle {
+    font-size: 20px;
+    color: #dadada;
+}
+
+.projectSection h2 {
+    font-size: 35px;
+    position: relative;
+}
+
+.projectSection h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    right: 30%;
+    height: 10px;
+    width: 20%;
+    background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+    background-size: cover;
+}
+
+.projectSection .projectWraper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.projectSection .projectWraper .project {
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.projectSection .projectWraper .project .moreIcon {
+    position: absolute;
+    right: 0%;
+    bottom: 20%;
+    border: 1px solid var(--darkColor);
+    border-radius: 50%;
+    color: var(--primeryColor);
+    font-size: 20px;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.projectSection .projectWraper .project:hover .moreIcon {
+    opacity: 1;
+    right: 8%;
+}
+
+.projectSection .projectWraper .project img {
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.projectSection .projectWraper .project a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.projectSection .projectWraper .project span {
+    font-size: 18px;
+    display: block;
+}
+
+.projectSection .projectWraper .project a:hover {
+    color: var(--primeryColor);
+}
+
+@media(max-width: 568px) {
+    .projectSection .projectWraper {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .projectSection {
+        margin-top: 18rem;
+    }
+
+    .projectSection h2 {
+        font-size: 16px;
+        position: relative;
+    }
+
+    .projectSection h2::after {
+        content: "";
+        position: absolute;
+        bottom: -7%;
+        right: 20%;
+        height: 8px;
+        width: 30%;
+    }
+
+    .projectSection .subTitle {
+        font-size: 12px;
+    }
+}
+
+
+
+/* ========= testimonial section =========== */
+.testimonial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+    padding: 0 6%;
+
+}
+
+.testimonial .leftSide {
+    width: 50%;
+    text-align: center;
+}
+
+.testimonial .leftSide .imageGalary .singelimage {
+    height: 285px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.testimonial .leftSide .imageGalary .singelimage img {
+    margin-bottom: 5rem;
+    border-radius: 10px;
+}
+
+.testimonial .leftSide .imageGalary .dubleimage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.testimonial .leftSide .imageGalary .dubleimage img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.testimonial .rightSide {
+    width: 46%;
+    padding: 1rem 4%;
+}
+
+.testimonial .rightSide .what {
+    font-size: 22px;
+    color: #dadada;
+}
+
+.testimonial .rightSide h2 {
+    font-size: 35px;
+    position: relative;
+}
+
+.testimonial .rightSide h2::after {
+    content: "";
+    position: absolute;
+    bottom: -2%;
+    right: 30%;
+    height: 10px;
+    width: 20%;
+    background: url(./Assits/33f5c2188ea6acdd6046fe7b673a68a3-removebg-preview.png) no-repeat center;
+    background-size: cover;
+}
+
+.testimonial .rightSide .contentBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 2rem;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial .rightSide .contentBox .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: self-start;
+    gap: 1.2rem;
+}
+
+.testimonial .rightSide .contentBox .content .icon {
+    font-size: 30px;
+    color: var(--seconderyColor);
+    display: inline-block;
+}
+
+.testimonial .rightSide .contentBox :nth-child(2) .icon {
+    color: var(--primeryColor);
+}
+
+.testimonial .rightSide .contentBox :nth-child(3) .icon {
+    color: #00ca8e;
+}
+
+.testimonial .rightSide .contentBox :nth-child(4) .icon {
+    color: #eb02df;
+}
+
+.testimonial .rightSide .contentBox .content .text h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+
+.testimonial .rightSide .contentBox .content .text p {
+    color: var(--darkColor);
+}
+
+
+/* ============================================== Responsive Section Start ================================================= */
+
+@media(max-width:900px) {
+    .testimonial {
+        flex-direction: column;
+
+    }
+
+    .testimonial .leftSide {
+        width: 100%;
+    }
+
+    .testimonial .rightSide {
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width:568px) {
+    .testimonial .rightSide h2 {
+        font-size: 18px;
+    }
+
+    .testimonial .rightSide h2::after {
+        content: "";
+        position: absolute;
+        bottom: -7%;
+        right: 30%;
+        height: 8px;
+        width: 30%;
+    }
+
+    .testimonial .rightSide .what {
+        font-size: 12px;
+    }
+
+    .testimonial .rightSide .contentBox {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 0rem;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .testimonial .rightSide .contentBox .content {
+        border: .5px solid transparent;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .testimonial .rightSide .contentBox .content:hover {
+        border: .5px solid #dadada;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+}
+
+/* ============================================== Responsive Section Start ================================================= */
+
+.commuinitySection {
+    padding: 0 6%;
+}
+
+.commuinitySection .commuinityBox {
+    background: linear-gradient(284deg, rgb(93, 18, 210) 0%, rgb(185, 49, 252) 50%, rgb(255, 106, 194) 100%);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+}
+
+.commuinitySection .commuinityBox span {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+}
+
+.commuinitySection .commuinityBox h2 {
+    font-size: 35px;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.commuinitySection .commuinityBox a {
+    text-decoration: none;
+    display: inline-block;
+    color: var(--darkColor);
+    padding: .8rem 1.5rem;
+    background: #fff;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+.commuinitySection .commuinityBox a:hover {
+    transform: translateY(-5px);
+}
+
+@media(max-width:568px){
+    .commuinitySection .commuinityBox h2 {
+        font-size: 25px;
+    }
+    .commuinitySection .commuinityBox span {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+footer{
+    padding: 0 6%;
+}
+footer .footerList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    padding: 3rem 0;
+    gap: 2rem;
+}
+footer .footerList .list h1{
+    font-size: 35px;
+    color: var(--seconderyColor);
+}
+footer .footerList .list h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--darkColor);
+}
+footer .footerList .list p{
+    font-size: 18px;
+}
+footer .footerList .list ul{
+    list-style: none;
+}
+footer .footerList .list ul a{
+    text-decoration: none;
+    color: var(--darkColor);
+}
+footer .footerList .list .inputFeld{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+footer .footerList .list .inputFeld .email{
+    height: 48px;
+    width: 75%;
+    border: none;
+    background: #fff;
+    padding-left: .5rem;
+
+}
+footer .footerList .list .inputFeld .btn{
+    height: 49px;
+    width: 20%;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    border: none;
+}

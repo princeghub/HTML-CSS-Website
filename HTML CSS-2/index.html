@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ========== Font Awosome ========= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- ========= Google Font ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+
+            <div class="navLink">
+                <i class="fa-solid fa-xmark" onclick="hideManu()"></i>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showManu()"></i>
+        </nav>
+
+        <div class="headerContent">
+            <h1>We bring solutions to <br> make life easier</h1>
+            <p>We are a creative company that focuses on long <br> term relationships with customers.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <section class="cartSection">
+        <div class="cartWraper">
+            <div class="cartBox">
+
+                <div class="cart">
+                    <span><i class="fa-solid fa-file"></i></span>
+                    <h4>Content Marketing</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
+                        justo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="cart">
+                    <span><i class="fa-brands fa-wordpress"></i></span>
+                    <h4>WordPress Development</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
+                        justo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="cart">
+                    <span><i class="fa-solid fa-sun"></i></span>
+                    <h4>Digital Marketing</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
+                        justo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div class="cart">
+                    <span><i class="fa-solid fa-pen-nib"></i></span>
+                    <h4>UX / UI Design</h4>
+                    <p>Nulla vitae elit libero, a pharetra augue. Donec id elit non mi porta gravida at eget metus cras
+                        justo.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="whyCartBox">
+
+            <span class="why"> WHY CHOOSE US?</span>
+            <h2 class="subTitle">Here are a few reasons why our <br> customers choose Sandbox.</h2>
+
+            <div class="whyCart">
+
+                <div class="wraperCart shadow" id="cartBtn1">
+                    <div class="cartIcon"><span><i class="fa-solid fa-users"></i></span></div>
+                    <div class="cartContent">
+                        <h4>Collect Ideas</h4>
+                        <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+                    </div>
+                </div>
+
+                <div class="wraperCart" id="cartBtn2">
+                    <div class="cartIcon"><span><i class="fa-solid fa-database"></i></span></div>
+                    <div class="cartContent">
+                        <h4>Data Analysis</h4>
+                        <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+                    </div>
+                </div>
+
+                <div class="wraperCart" id="cartBtn3">
+                    <div class="cartIcon"><span><i class="fa-brands fa-nfc-symbol"></i></span></div>
+                    <div class="cartContent">
+                        <h4>Finalize Product</h4>
+                        <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div id="box1">
+            <div class="ideaSection">
+                <div class="imgSide">
+                    <img src="./Assits/creative-people-working-office.jpg" alt="">
+                </div>
+                <div class="ContentSide">
+                    <h4>Collect Ideas</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, corrupti sequi unde suscipit
+                        ad totam dolorem odit necessitatibus aut nisi ipsam quis enim. Eaque maxime labore modi omnis, eum
+                        illum.</p>
+                    <ul>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                    </ul>
+    
+                    <a href="#" class="lrnBtn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="box2">
+            <div class="ideaSection">
+                <div class="imgSide">
+                    <img src="./Assits/businessman-showing-changes-report.jpg" alt="">
+                </div>
+                <div class="ContentSide">
+                    <h4>Data Analysis</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, corrupti sequi unde suscipit
+                        ad totam dolorem odit necessitatibus aut nisi ipsam quis enim. Eaque maxime labore modi omnis, eum
+                        illum.</p>
+                    <ul>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                    </ul>
+    
+                    <a href="#" class="lrnBtn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="box3">
+            <div class="ideaSection">
+                <div class="imgSide">
+                    <img src="./Assits/medium-shot-smiley-women-working-with-laptop.jpg" alt="">
+                </div>
+                <div class="ContentSide">
+                    <h4>Finalize Product</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, corrupti sequi unde suscipit
+                        ad totam dolorem odit necessitatibus aut nisi ipsam quis enim. Eaque maxime labore modi omnis, eum
+                        illum.</p>
+                    <ul>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                        <li>
+                            <span><i class="fa-regular fa-circle-check"></i></span>
+                            Aenean eu leo quam. Pellentesque ornare.
+                        </li>
+                    </ul>
+    
+                    <a href="#" class="lrnBtn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section class="teamSection">
+        <div class="teamWraper">
+            <div class="teamLeft">
+                <span class="save">SAVE TIME AND MONEY</span>
+                <h2>Save your time and money by <br> choosing our professional team.</h2>
+            </div>
+            <div class="teamRight">
+                <div class="progressbar">
+                    <span>95%</span>
+                </div>
+                <div class="progressbar">
+                    <span>95%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="teamReview">
+            <div class="reviewimg">
+                <img src="./Assits/modern-equipped-computer-lab.jpg" alt="Image">
+            </div>
+            <div class="reviewContent">
+                <span class="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </span>
+                <p>“Vivamus sagittis lacus vel augue laoreet rutrum <br>faucibus dolor auctor. Vestibulum ligula porta
+                    <br> felis
+                    euismod semper. Cras justo odio.”
+                </p>
+                <h5>Cory Zamora</h5>
+                <span>Marketing Specialist</span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="projectSection">
+        <span class="subTitle">LATEST PROJECTS</span>
+        <h2>Check out some of our awesome projects <br> with creative ideas and great design.</h2>
+
+        <div class="projectWraper">
+            <div class="project">
+                <img src="./Assits/woman-showing-building-blueprint-wall.jpg" alt="">
+                <a href="#">Cras Fermentum Sem</a>
+                <span>Stationary</span>
+                <span class="moreIcon"><i class="fa-solid fa-up-down-left-right"></i></span>
+            </div>
+
+            <div class="project">
+                <img src="./Assits/woman-showing-building-blueprint-wall.jpg" alt="">
+                <a href="#">Cras Fermentum Sem</a>
+                <span>Stationary</span>
+                <span class="moreIcon"><i class="fa-solid fa-up-down-left-right"></i></span>
+            </div>
+
+            <div class="project">
+                <img src="./Assits/woman-showing-building-blueprint-wall.jpg" alt="">
+                <a href="#">Cras Fermentum Sem</a>
+                <span>Stationary</span>
+                <span class="moreIcon"><i class="fa-solid fa-up-down-left-right"></i></span>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="testimonial">
+        <div class="leftSide">
+            <div class="imageGalary">
+                <div class="singelimage">
+                    <img src="./Assits/businessman-showing-changes-report.jpg" alt="">
+                </div>
+                <div class="dubleimage">
+                    <img src="./Assits/front-view-business-people-office.jpg" alt="">
+                    <img src="./Assits/medium-shot-smiley-women-working-with-laptop.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="rightSide">
+            <span class="what">WHAT MAKES US DIFFERENT?</span>
+            <h2>We bring solutions to make life <br> easier for our customers.</h2>
+
+            <div class="contentBox">
+                <div class="content">
+                    <span class="icon"><i class="fa-solid fa-head-side-virus"></i></span>
+                    <div class="text">
+                        <h5>Creativity</h5>
+                        <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="icon"><i class="fa-solid fa-users"></i></span>
+                    <div class="text">
+                        <h5>Innovative Thinking</h5>
+                        <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="icon"><i class="fa-solid fa-puzzle-piece"></i></span>
+                    <div class="text">
+                        <h5>Rapid Solutions</h5>
+                        <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <span class="icon"><i class="fa-solid fa-headset"></i></span>
+                    <div class="text">
+                        <h5>Top-Notch Support</h5>
+                        <p>Curabitur blandit lacus porttitor ridiculus mus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="commuinitySection">
+        <div class="commuinityBox">
+            <span>JOIN OUR COMMUNITY</span>
+            <h2>We are trusted by over 5000+ clients. <br> Join them now and grow your business.</h2>
+            <a href="#">Get Started</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footerList">
+            <div class="list">
+                <div class="logo">
+                    <h1>Logo</h1>
+                </div>
+                <p>
+                    © 2023 Md Shalehin <br>
+                    All rights reserved.
+                </p>
+            </div>
+
+            <div class="list">
+                <h5>Get in Touch</h5>
+                <p>Moonshine St. 14/05 Light City, London, United Kingdom</p>
+            </div>
+
+            <div class="list">
+                <h5>Learn More</h5>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Our Team</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h5>Our Newsletter</h5>
+                <p>Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                <div class="inputFeld">
+                    <input type="email" class="email" placeholder="Your Email">
+                    <input type="submit" class="btn" value="join">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
